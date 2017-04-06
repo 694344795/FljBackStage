@@ -1,18 +1,41 @@
 {
-  "name": "fanlejie",
+  "name": "flebs",
   "version": "1.0.0",
-  "description": "'phoneapp'",
+  "description": "FljBackStage",
   "main": "server.js",
+  "dependencies": {
+    "async": "^2.1.5",
+    "body-parser": "^1.17.1",
+    "cheerio": "^0.22.0",
+    "driver": "^0.0.0",
+    "ejs": "^2.5.6",
+    "events": "^1.1.1",
+    "express": "^4.15.2",
+    "http": "^0.0.0",
+    "https": "^1.0.0",
+    "jquery": "^3.2.1",
+    "mongodb": "^2.2.24",
+    "mysql": "^2.13.0",
+    "package": "^1.0.1",
+    "querystring": "^0.2.0",
+    "socket.io": "^1.7.3",
+    "url": "^0.11.0",
+    "ws": "^2.2.1",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "tw yw xdh hzm zzb",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/694344795/FljBackStage.git"
+  },
+  "author": "zzb tw yw xdh hzm",
   "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.17.1",
-    "express": "^4.15.2",
-    "mysql": "^2.13.0",
-    "path": "^0.12.7"
-  }
+  "bugs": {
+    "url": "https://github.com/694344795/FljBackStage/issues"
+  },
+  "homepage": "https://github.com/694344795/FljBackStage#readme"
 }
