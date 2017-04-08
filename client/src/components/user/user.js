@@ -1,5 +1,4 @@
 var  React=require("react");
-require(./bootstrap.min.css);
 var UserComponent=React.createClass({
   render:function(){
     return(
