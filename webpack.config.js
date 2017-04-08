@@ -12,7 +12,7 @@ module.exports = {
 	output: {//输出目录
 		path: path.resolve(__dirname, './dist'),//打包后的js文件存放的地方
 		filename: 'bundle.js',//打包后输出的js的文件名
-		publicPath: '/dist/'
+		publicPath: '/client/dist/'
 	},
 	module: {
 		//loaders加载器
