@@ -1,5 +1,10 @@
 var  React=require("react");
 var UserComponent=React.createClass({
+   getInitialState:function(){
+      return {
+        user:[userid,username,]
+     }
+   },
   render:function(){
     return(
       <div className="bs-example" data-example-id="contextual-table">
