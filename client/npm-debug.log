@@ -1,0 +1,298 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData extract-text-webpack-plugin
+20 silly mapToRegistry name extract-text-webpack-plugin
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry data Result {
+23 silly mapToRegistry   raw: 'extract-text-webpack-plugin',
+23 silly mapToRegistry   scope: null,
+23 silly mapToRegistry   escapedName: 'extract-text-webpack-plugin',
+23 silly mapToRegistry   name: 'extract-text-webpack-plugin',
+23 silly mapToRegistry   rawSpec: '',
+23 silly mapToRegistry   spec: 'latest',
+23 silly mapToRegistry   type: 'tag' }
+24 silly mapToRegistry uri https://registry.npmjs.org/extract-text-webpack-plugin
+25 silly fetchNamedPackageData flux
+26 silly mapToRegistry name flux
+27 silly mapToRegistry using default registry
+28 silly mapToRegistry registry https://registry.npmjs.org/
+29 silly mapToRegistry data Result {
+29 silly mapToRegistry   raw: 'flux',
+29 silly mapToRegistry   scope: null,
+29 silly mapToRegistry   escapedName: 'flux',
+29 silly mapToRegistry   name: 'flux',
+29 silly mapToRegistry   rawSpec: '',
+29 silly mapToRegistry   spec: 'latest',
+29 silly mapToRegistry   type: 'tag' }
+30 silly mapToRegistry uri https://registry.npmjs.org/flux
+31 silly fetchNamedPackageData jquery
+32 silly mapToRegistry name jquery
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry https://registry.npmjs.org/
+35 silly mapToRegistry data Result {
+35 silly mapToRegistry   raw: 'jquery',
+35 silly mapToRegistry   scope: null,
+35 silly mapToRegistry   escapedName: 'jquery',
+35 silly mapToRegistry   name: 'jquery',
+35 silly mapToRegistry   rawSpec: '',
+35 silly mapToRegistry   spec: 'latest',
+35 silly mapToRegistry   type: 'tag' }
+36 silly mapToRegistry uri https://registry.npmjs.org/jquery
+37 silly fetchNamedPackageData react-addons-css-transition-group
+38 silly mapToRegistry name react-addons-css-transition-group
+39 silly mapToRegistry using default registry
+40 silly mapToRegistry registry https://registry.npmjs.org/
+41 silly mapToRegistry data Result {
+41 silly mapToRegistry   raw: 'react-addons-css-transition-group',
+41 silly mapToRegistry   scope: null,
+41 silly mapToRegistry   escapedName: 'react-addons-css-transition-group',
+41 silly mapToRegistry   name: 'react-addons-css-transition-group',
+41 silly mapToRegistry   rawSpec: '',
+41 silly mapToRegistry   spec: 'latest',
+41 silly mapToRegistry   type: 'tag' }
+42 silly mapToRegistry uri https://registry.npmjs.org/react-addons-css-transition-group
+43 silly fetchNamedPackageData react-redux
+44 silly mapToRegistry name react-redux
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry data Result {
+47 silly mapToRegistry   raw: 'react-redux',
+47 silly mapToRegistry   scope: null,
+47 silly mapToRegistry   escapedName: 'react-redux',
+47 silly mapToRegistry   name: 'react-redux',
+47 silly mapToRegistry   rawSpec: '',
+47 silly mapToRegistry   spec: 'latest',
+47 silly mapToRegistry   type: 'tag' }
+48 silly mapToRegistry uri https://registry.npmjs.org/react-redux
+49 silly fetchNamedPackageData redux
+50 silly mapToRegistry name redux
+51 silly mapToRegistry using default registry
+52 silly mapToRegistry registry https://registry.npmjs.org/
+53 silly mapToRegistry data Result {
+53 silly mapToRegistry   raw: 'redux',
+53 silly mapToRegistry   scope: null,
+53 silly mapToRegistry   escapedName: 'redux',
+53 silly mapToRegistry   name: 'redux',
+53 silly mapToRegistry   rawSpec: '',
+53 silly mapToRegistry   spec: 'latest',
+53 silly mapToRegistry   type: 'tag' }
+54 silly mapToRegistry uri https://registry.npmjs.org/redux
+55 silly fetchNamedPackageData redux-thunk
+56 silly mapToRegistry name redux-thunk
+57 silly mapToRegistry using default registry
+58 silly mapToRegistry registry https://registry.npmjs.org/
+59 silly mapToRegistry data Result {
+59 silly mapToRegistry   raw: 'redux-thunk',
+59 silly mapToRegistry   scope: null,
+59 silly mapToRegistry   escapedName: 'redux-thunk',
+59 silly mapToRegistry   name: 'redux-thunk',
+59 silly mapToRegistry   rawSpec: '',
+59 silly mapToRegistry   spec: 'latest',
+59 silly mapToRegistry   type: 'tag' }
+60 silly mapToRegistry uri https://registry.npmjs.org/redux-thunk
+61 verbose request uri https://registry.npmjs.org/extract-text-webpack-plugin
+62 verbose request no auth needed
+63 info attempt registry request try #1 at 09:09:41
+64 verbose request id 7ced084cad09a75e
+65 http request GET https://registry.npmjs.org/extract-text-webpack-plugin
+66 verbose request uri https://registry.npmjs.org/flux
+67 verbose request no auth needed
+68 info attempt registry request try #1 at 09:09:41
+69 http request GET https://registry.npmjs.org/flux
+70 verbose request uri https://registry.npmjs.org/jquery
+71 verbose request no auth needed
+72 info attempt registry request try #1 at 09:09:41
+73 http request GET https://registry.npmjs.org/jquery
+74 verbose request uri https://registry.npmjs.org/react-addons-css-transition-group
+75 verbose request no auth needed
+76 info attempt registry request try #1 at 09:09:41
+77 http request GET https://registry.npmjs.org/react-addons-css-transition-group
+78 verbose request uri https://registry.npmjs.org/react-redux
+79 verbose request no auth needed
+80 info attempt registry request try #1 at 09:09:41
+81 http request GET https://registry.npmjs.org/react-redux
+82 verbose request uri https://registry.npmjs.org/redux
+83 verbose request no auth needed
+84 info attempt registry request try #1 at 09:09:41
+85 http request GET https://registry.npmjs.org/redux
+86 verbose request uri https://registry.npmjs.org/redux-thunk
+87 verbose request no auth needed
+88 info attempt registry request try #1 at 09:09:41
+89 http request GET https://registry.npmjs.org/redux-thunk
+90 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.72.162:443
+91 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.72.162:443
+92 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.72.162:443
+93 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.72.162:443
+94 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.72.162:443
+95 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.72.162:443
+96 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.72.162:443
+97 info attempt registry request try #2 at 09:10:12
+98 http request GET https://registry.npmjs.org/react-addons-css-transition-group
+99 info attempt registry request try #2 at 09:10:12
+100 http request GET https://registry.npmjs.org/jquery
+101 info attempt registry request try #2 at 09:10:12
+102 http request GET https://registry.npmjs.org/flux
+103 info attempt registry request try #2 at 09:10:12
+104 http request GET https://registry.npmjs.org/extract-text-webpack-plugin
+105 info attempt registry request try #2 at 09:10:12
+106 http request GET https://registry.npmjs.org/react-redux
+107 info attempt registry request try #2 at 09:10:12
+108 http request GET https://registry.npmjs.org/redux-thunk
+109 info attempt registry request try #2 at 09:10:12
+110 http request GET https://registry.npmjs.org/redux
+111 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.72.162:443
+112 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.72.162:443
+113 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.72.162:443
+114 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.72.162:443
+115 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.72.162:443
+116 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.72.162:443
+117 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.72.162:443
+118 info attempt registry request try #3 at 09:11:33
+119 http request GET https://registry.npmjs.org/jquery
+120 info attempt registry request try #3 at 09:11:33
+121 http request GET https://registry.npmjs.org/redux-thunk
+122 info attempt registry request try #3 at 09:11:33
+123 http request GET https://registry.npmjs.org/flux
+124 info attempt registry request try #3 at 09:11:33
+125 http request GET https://registry.npmjs.org/redux
+126 info attempt registry request try #3 at 09:11:33
+127 http request GET https://registry.npmjs.org/extract-text-webpack-plugin
+128 info attempt registry request try #3 at 09:11:33
+129 http request GET https://registry.npmjs.org/react-addons-css-transition-group
+130 info attempt registry request try #3 at 09:11:33
+131 http request GET https://registry.npmjs.org/react-redux
+132 silly fetchPackageMetaData Error: connect ETIMEDOUT 151.101.72.162:443
+132 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+132 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+132 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+132 silly fetchPackageMetaData  error for jquery@^3.2.1 { Error: connect ETIMEDOUT 151.101.72.162:443
+132 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+132 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+132 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+132 silly fetchPackageMetaData   code: 'ETIMEDOUT',
+132 silly fetchPackageMetaData   errno: 'ETIMEDOUT',
+132 silly fetchPackageMetaData   syscall: 'connect',
+132 silly fetchPackageMetaData   address: '151.101.72.162',
+132 silly fetchPackageMetaData   port: 443 }
+133 silly fetchPackageMetaData Error: connect ETIMEDOUT 151.101.72.162:443
+133 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+133 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+133 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+133 silly fetchPackageMetaData  error for extract-text-webpack-plugin@^2.1.0 { Error: connect ETIMEDOUT 151.101.72.162:443
+133 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+133 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+133 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+133 silly fetchPackageMetaData   code: 'ETIMEDOUT',
+133 silly fetchPackageMetaData   errno: 'ETIMEDOUT',
+133 silly fetchPackageMetaData   syscall: 'connect',
+133 silly fetchPackageMetaData   address: '151.101.72.162',
+133 silly fetchPackageMetaData   port: 443 }
+134 silly fetchPackageMetaData Error: connect ETIMEDOUT 151.101.72.162:443
+134 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+134 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+134 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+134 silly fetchPackageMetaData  error for react-addons-css-transition-group@^15.4.2 { Error: connect ETIMEDOUT 151.101.72.162:443
+134 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+134 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+134 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+134 silly fetchPackageMetaData   code: 'ETIMEDOUT',
+134 silly fetchPackageMetaData   errno: 'ETIMEDOUT',
+134 silly fetchPackageMetaData   syscall: 'connect',
+134 silly fetchPackageMetaData   address: '151.101.72.162',
+134 silly fetchPackageMetaData   port: 443 }
+135 silly fetchPackageMetaData Error: connect ETIMEDOUT 151.101.72.162:443
+135 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+135 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+135 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+135 silly fetchPackageMetaData  error for redux-thunk@^2.2.0 { Error: connect ETIMEDOUT 151.101.72.162:443
+135 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+135 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+135 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+135 silly fetchPackageMetaData   code: 'ETIMEDOUT',
+135 silly fetchPackageMetaData   errno: 'ETIMEDOUT',
+135 silly fetchPackageMetaData   syscall: 'connect',
+135 silly fetchPackageMetaData   address: '151.101.72.162',
+135 silly fetchPackageMetaData   port: 443 }
+136 silly fetchPackageMetaData Error: connect ETIMEDOUT 151.101.72.162:443
+136 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+136 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+136 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+136 silly fetchPackageMetaData  error for flux@^3.1.2 { Error: connect ETIMEDOUT 151.101.72.162:443
+136 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+136 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+136 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+136 silly fetchPackageMetaData   code: 'ETIMEDOUT',
+136 silly fetchPackageMetaData   errno: 'ETIMEDOUT',
+136 silly fetchPackageMetaData   syscall: 'connect',
+136 silly fetchPackageMetaData   address: '151.101.72.162',
+136 silly fetchPackageMetaData   port: 443 }
+137 silly fetchPackageMetaData Error: connect ETIMEDOUT 151.101.72.162:443
+137 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+137 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+137 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+137 silly fetchPackageMetaData  error for redux@^3.6.0 { Error: connect ETIMEDOUT 151.101.72.162:443
+137 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+137 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+137 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+137 silly fetchPackageMetaData   code: 'ETIMEDOUT',
+137 silly fetchPackageMetaData   errno: 'ETIMEDOUT',
+137 silly fetchPackageMetaData   syscall: 'connect',
+137 silly fetchPackageMetaData   address: '151.101.72.162',
+137 silly fetchPackageMetaData   port: 443 }
+138 silly fetchPackageMetaData Error: connect ETIMEDOUT 151.101.72.162:443
+138 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+138 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+138 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+138 silly fetchPackageMetaData  error for react-redux@^5.0.3 { Error: connect ETIMEDOUT 151.101.72.162:443
+138 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+138 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1045:20)
+138 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+138 silly fetchPackageMetaData   code: 'ETIMEDOUT',
+138 silly fetchPackageMetaData   errno: 'ETIMEDOUT',
+138 silly fetchPackageMetaData   syscall: 'connect',
+138 silly fetchPackageMetaData   address: '151.101.72.162',
+138 silly fetchPackageMetaData   port: 443 }
+139 silly rollbackFailedOptional Starting
+140 silly rollbackFailedOptional Finishing
+141 silly runTopLevelLifecycles Finishing
+142 silly install printInstalled
+143 verbose stack Error: connect ETIMEDOUT 151.101.72.162:443
+143 verbose stack     at Object.exports._errnoException (util.js:1022:11)
+143 verbose stack     at exports._exceptionWithHostPort (util.js:1045:20)
+143 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+144 verbose cwd D:\jsT\react\FljBackStage\client
+145 error Windows_NT 6.1.7601
+146 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+147 error node v6.10.0
+148 error npm  v3.10.10
+149 error code ETIMEDOUT
+150 error errno ETIMEDOUT
+151 error syscall connect
+152 error network connect ETIMEDOUT 151.101.72.162:443
+153 error network This is most likely not a problem with npm itself
+153 error network and is related to network connectivity.
+153 error network In most cases you are behind a proxy or have bad network settings.
+153 error network
+153 error network If you are behind a proxy, please make sure that the
+153 error network 'proxy' config is set properly.  See: 'npm help config'
+154 verbose exit [ 1, true ]
