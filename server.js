@@ -9,9 +9,9 @@ var server = new WebpackDevServer(webpack(config), {
 
 });
 
-server.listen(3000, 'localhost', function(err, result) {
+server.listen(555, 'localhost', function(err, result) {
   if (err) {
     return console.log(err);
   }
-  return console.log('listening at locahost:3000...');
+  return console.log('listening at locahost:555...');
 })
