@@ -1,6 +1,8 @@
 var {CHANGE_GREEN,CHANGE_YELLOW,CHANGE_RED} = require('../constants/twConstant');
+var $ = require('jquery');
 module.exports = function(state,action){
     var twState;
+    getData();
     switch(action.type){
         case    CHANGE_GREEN:
             twState = {
@@ -27,4 +29,13 @@ module.exports = function(state,action){
             };
     }
     return twState;
+
+}
+
+function getData(){
+
+// $.get(this.props.api, function(_response){
+//             console.log(4);
+//             this.setState({data: _response.data});
+//         }.bind(this))
 }

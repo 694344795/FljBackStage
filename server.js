@@ -15,3 +15,16 @@ server.listen(555, 'localhost', function(err, result) {
   }
   return console.log('listening at locahost:555...');
 })
+
+var path = require('path');
+var express = require('express');
+var app = express();
+
+
+var twRouter = require('./server/nodeServer/twrouter')
+
+twRouter.router(app);
+
+var appServer = app.listen(888, function(){
+    console.log(appServer.address());
+})

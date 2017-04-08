@@ -1,15 +1,15 @@
 var React = require('react');
-
+var $ = require('jquery');
 var TwComponent = React.createClass({
-    render:function(){
-        return(
-            <div>
-                <img style={{width: '50px'}} src={'./imgs/' + this.props.color + '.jpg'} />
-                <br/>
-                <button onClick={this.props.changeRed}>red</button>
-                <button onClick={this.props.changeGreen}>Green</button>
-                <button onClick={this.props.changeYellow}>Yellow</button>
-            </div>
+    render: function(){
+        return (
+            <table>
+                <thead>
+                    <tr>
+                        <th>index</th>
+                    </tr>
+                </thead>
+            </table>
         )
     }
 })
