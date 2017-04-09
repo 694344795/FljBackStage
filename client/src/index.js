@@ -5,14 +5,16 @@ var redux = require('redux')
 var {Provider}  = require('react-redux');
 var twReducer = require('./reducers/twReducer.js');
 var TwComponent = require('./containers/twContainer.js');
-var store = redux.createStore(twReducer);
-ReactDOM.render(
-    <Provider store = {store}>
-           <TwComponent/>
-    </Provider>,document.getElementById("del"));
+//var store = redux.createStore(twReducer);
+//ReactDOM.render(
+//  <Provider store = {store}>
+//         <TwComponent/>
+//  </Provider>,document.getElementById("del"));
 
-var UserComponent=require("./components/user/user.js");
-ReactDOM.render(<UserComponent/>,document.getElementById("del"));
+var MainComponent=require("./components/main/mainComponent.js");
+ReactDOM.render(<MainComponent/>,document.getElementById("main"));
+
+
 
 
 
