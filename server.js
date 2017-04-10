@@ -21,9 +21,17 @@ var express = require('express');
 var app = express();
 
 
+// var twRouter = require('./server/nodeServer/twrouter')
+// app.use(express.static(path.join(__dirname, '/')));
+
+
 var twRouter = require('./server/nodeServer/twrouter')
-app.use(express.static(path.join(__dirname, '/')));
+
 twRouter.router(app);
+app.use(express.static(path.join(__dirname,'/')));
+console.log(__dirname);
+var zbRouter = require('./server/nodeServer/zbrouter')
+zbRouter.router(app);
 
 var appServer = app.listen(888, function(){
     console.log(appServer.address());
