@@ -2,7 +2,7 @@ var  React=require("react");
 var UserComponent=React.createClass({
    getInitialState:function(){
       return {
-        user:[userid,username,]
+        user:["userid","username"]
      }
    },
   render:function(){

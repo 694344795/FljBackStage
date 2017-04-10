@@ -1,19 +1,20 @@
-var {CHANGE_GREEN,CHANGE_YELLOW,CHANGE_RED}  = require('../constants/twConstant')
-exports.changeGreen = function(){
-    return{
-        type:CHANGE_GREEN
-    };
+var {CHANGE,DELETE,ADD}  = require('../constants/twConstant')
 
-}
-exports.changeYellow = function(){
+
+exports.add = function(){
     return{
-        type:CHANGE_YELLOW
+        type:ADD
     };
     
 }
-exports.changeRed = function(){
-    return{
-        type:CHANGE_RED
+exports.del = function(){
+   return{
+        type:DELETE
     };
     
+}
+exports.change = function(){
+    return{
+        type:CHANGE
+    };
 }

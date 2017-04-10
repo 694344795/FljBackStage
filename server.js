@@ -22,7 +22,7 @@ var app = express();
 
 
 var twRouter = require('./server/nodeServer/twrouter')
-
+app.use(express.static(path.join(__dirname, '/')));
 twRouter.router(app);
 
 var appServer = app.listen(888, function(){

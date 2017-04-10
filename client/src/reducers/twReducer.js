@@ -1,41 +1,63 @@
 var {CHANGE_GREEN,CHANGE_YELLOW,CHANGE_RED} = require('../constants/twConstant');
 var $ = require('jquery');
-module.exports = function(state,action){
+
+function tw(state,action){
     var twState;
-    getData();
-    switch(action.type){
-        case    CHANGE_GREEN:
-            twState = {
-                color: 'green',
-                time:5
-            };
-            break;
-        case CHANGE_YELLOW:
-            twState = {
-                color:'yellow',
-                time: 3
-            };
-            break;
-        case CHANGE_RED:
-            twState = {
-                color: 'red',
-                time: 7
-            };
-            break;
-        default:
-            twState = {
-                color:'red',
-                time:9
-            };
-    }
-    return twState;
+    var data;
+    var get = ajax(); 
+    data = get; 
+    // console.log(data)
 
+    // switch(action.type){
+    //     case CHANGE:
+    //         datas={"type":"change"}
+    //         var newData=ajax(); 
+    //         backDatas = backData;
+    //         break;
+    //     case DELETE:
+    //        backDatas = backData;
+    //         break;
+    //     default:
+    //         backDatas = backData;
+    // }
+    return data;
+}
+module.exports = tw;
+
+function ajax(callback){
+$.ajax({
+    type:"GET",
+    url:"http://localhost:888/product",
+    dataType:"json",
+    async:false,
+    success:function(response){ 
+     Data={datas:response};
+ } 
+});
+
+
+return Data; 
 }
 
-function getData(){
 
-// $.get(this.props.api, function(_response){
-//             console.log(4);
-//             this.setState({data: _response.data});
-//         }.bind(this))
-}
+
+// module.exports = function(state,action){
+//     var backData; 
+//     function ajax() 
+//     { 
+//         $.ajax({
+//             type:"GET",
+//             url:"http://localhost:888/product",
+//             dataType:"json",
+//             async:false,
+//             success:function(response){ 
+//                backData={datas:response};
+//             } 
+//         });
+//         // console.log(backData)
+//         return backData; 
+//     }
+//      var newData=ajax(); 
+//      console.log(backData);
+//      return backData;
+// }
