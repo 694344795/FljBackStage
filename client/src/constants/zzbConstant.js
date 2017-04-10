@@ -1,0 +1,7 @@
+exports.CHANGE_GREEN = 'CHANGE_1';
+exports.CHANGE_YELLOW = 'CHANGE_2';
+exports.CHANGE_RED = 'CHANGE_3';
+exports.CHANGE_GREEN = 'CHANGE_4';
+exports.CHANGE_YELLOW = 'CHANGE_5';
+exports.CHANGE_RED = 'CHANGE_6';
+exports.CHANGE_RED = 'CHANGE_7';

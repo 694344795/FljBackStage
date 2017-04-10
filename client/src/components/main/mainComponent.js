@@ -1,6 +1,7 @@
 var React = require('react');
 var stype = require('./mainComponent.css');
-
+var ReactRouter = require("react-router");
+var {Router, Route, hashHistory, Link, IndexRoute, browserHistory} = ReactRouter;
 var MainComponent = React.createClass({
 	componentWillMount: function() {
 		//判断是当前用户是否有权限，如果没有，则跳车到 login
@@ -13,20 +14,18 @@ var MainComponent = React.createClass({
 				<div className="dk-menu">
 				<input type="text" className="form-control" placeholder="输入查询信息" />
 					<ul className="nav-menu">
-						<li className="active"><a href="#"><span className="glyphicon glyphicon-dashboard"></span> 信息汇总</a></li>
-						<li><a href="#"><span className="glyphicon glyphicon-th"></span> 销售总额</a></li>
-						<li><a href="#"><span className="glyphicon glyphicon-stats"></span> 商品信息</a></li>
-						<li><a href="#"><span className="glyphicon glyphicon-list-alt"></span> 各类排行</a></li>
-						<li><a href="#"><span className="glyphicon glyphicon-pencil"></span> 客户列表</a></li>
-						<li><a href="#"><span className="glyphicon glyphicon-info-sign"></span> 订单列表</a></li>
-						
-						<li role="presentation" className="divider"></li>
-						<li><a href="login.html"><span className="glyphicon glyphicon-user"></span> 登录页面</a></li>
+						<li className="active"><Link to="/"><a href="#">信息汇总</a></Link></li>
+						<li><Link to="/"><a href="#">销售总额</a></Link></li>
+						<li><Link to="/"><a href="#">商品信息</a></Link></li>
+						<li><Link to="/"><a href="#">各类排行</a></Link></li>
+						<li><Link to="/"><a href="#">客户列表</a></Link></li>
+						<li><Link to="/buylist"><a href="#">订单列表</a></Link></li>
+						<li><Link to="/"><a href="login.html">登录页面</a></Link></li>
 					</ul>
 				</div>
-				<div className="dk-content" data-ui-view=""></div>
+				<div className="dk-content"></div>
 				</div>
-				<div className="dk-footer">@dk</div>
+				<div className="dk-footer">@凡乐街</div>
 			</div>
 		)
 	}
