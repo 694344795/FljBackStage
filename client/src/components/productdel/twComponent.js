@@ -12,19 +12,33 @@ var TwComponent = React.createClass({
         for(var key in this.props.datas){
             tb.push(this.props.datas[key]);
         }
-        console.log(tb)
+        // console.log(tb)
         return (
             <table>
             <thead>
+           <tr><th><input type= "button" className='add' value ='添加新的数据' onClick={this.props.show} /></th></tr>
             <tr>
             {
                 columns.map(function(index, elem) {
                     return <th name={index} key={index}><input value = {index}/></th>;
                 })          
             }
+            <th><input className='dd' value ='update' /></th>
+            <th><input className='dd' value ='del' /></th>
+            
             </tr>
             </thead>
             <tbody>
+            <tr  style = {{display:'none'}} className = 'addTr'>
+            
+                {
+                columns.map(function(index, elem) {
+                    return <td name={index} key={index}><input defaultValue =''/></td>;
+                })          
+            }
+            <td><input  type="button" value="添加" onClick={self.props.add}/></td>
+            </tr>
+            
 
             
             {
@@ -41,8 +55,8 @@ var TwComponent = React.createClass({
                     <td ><input defaultValue = {tb[index].message}/></td>
                     <td ><input defaultValue = {tb[index].src}/></td>
                     <td ><input defaultValue = {tb[index].status}/></td>
-                    <td><input id="change" type="button" value="编辑" onClick={self.props.change}/></td>
-                    <td><input id="change" type="button" value="删除" onClick={self.props.delete}/></td>
+                    <td><input className="change" type="button" value="编辑" onClick={self.props.change}/></td>
+                    <td><input className="del" type="button" value="删除" onClick={self.props.del}/></td>
 
                     </tr>
                 })          

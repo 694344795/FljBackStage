@@ -16,7 +16,7 @@ password: ''
 默认查询所有：sql.get({'host':'localhost','user':'root','password':'','DatabaseName':'数据库名称','TableName':'表名称'},function(err,data){
 	console.log(data);
 })
-传入属性中有Condition字段则支持条件查询（可以不写'TableName':'表名称'）：sql.get({'DatabaseName':'phoneproject','Condition':"select * from goods where id = 10002"},function(err,data){
+传入属性中有Condition字段则支持条件查询（可以不写'TableName':'表名称'）：sql.get({'DatabaseName':'fanlestreet','Condition':"select * from goods where id = 10002"},function(err,data){
       console.log(data);
     })
 返回值是数组
@@ -42,11 +42,11 @@ sql.insert(`{"DatabaseName":"数据库名称",
 格式：可以输入对象或者json格式的字符串
 
 ----删除符合条件数据(用户名和密码可以不填)-----
-sql.delete({'DatabaseName':'phoneproject','TableName':'goods','Condition':'id="10010"'},function(res,data){})
+sql.delete({'DatabaseName':'fanlestreet','TableName':'goods','Condition':'id="10010"'},function(res,data){})
 格式：可以输入对象或者json格式的字符串
 
 ----修改符合条件数据(用户名和密码可以不填)-----
-sql.updata({'DatabaseName':'phoneproject','Condition':'UPDATE goods SET price=998 WHERE id=10003'},function(err,data){})
+sql.updata({'DatabaseName':'fanlestreet','Condition':'UPDATE goods SET price=998 WHERE id=10003'},function(err,data){})
 Condition：sql语句
  */
 var mysql = require('mysql');
