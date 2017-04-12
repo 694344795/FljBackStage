@@ -3,52 +3,36 @@ table{
   border: 1px solid #000;
   cellspacing:0;
   cellpadding:0;
-  border-radius:5px;
-
 }
 th input{
     text-align: center;
-    width: 92px;
+    width: 112px;
     height: 30px;
     line-height: 30px;
    font-size: 10px;
    margin: 0;
    padding: 0;
-   background: #b4bbbb;
-   color:#fff;
+   background: #f5f5f5;
+   outline: none;
    border: none;
    border: 1px solid #000;
     cellspacing:0;
     font-size: 16px;
-    border-radius: 5px;
-}
-.add{
-  width: 92px;
-    padding: 10px;
-    line-height: 10px;
-    font-size: 11px;
-    background: #000;
-    color: #fff;
-   cursor: pointer;
-
-}
-.dd{
-  width: 78px;
 }
 td input{
     text-align: center;
-    width: 80px;
+    width: 100px;
     height: 30px;
     line-height: 30px;
    font-size: 10px;
    margin: 0;
    padding:0 6px;
    background: #f5f5f5;
+   outline: none;
    border: none;
    border: 1px solid #000;
     overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  border-radius: 5px;
 
 }
