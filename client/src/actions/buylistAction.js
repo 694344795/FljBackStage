@@ -1,4 +1,4 @@
-var {CHANGE_GREEN, CHANGE_YELLOW, CHANGE_RED} = require('../constants/buyConstant');
+var {CHANGE_GREEN, CHANGE_YELLOW, CHANGE_RED, CHANGE_DELBUY, CHANGE_XGBUY} = require('../constants/buyConstant');
 
 exports.changeGreen = function(){
 	return {type: CHANGE_GREEN};
@@ -10,4 +10,10 @@ exports.changeYellow = function(){
 
 exports.changeRed = function(){
 	return {type: CHANGE_RED};
+}
+exports.delBuy = function(){
+	return {type: CHANGE_DELBUY};
+}
+exports.xgbtn = function(){
+	return {type: CHANGE_XGBUY};
 }

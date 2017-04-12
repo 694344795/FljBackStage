@@ -11,8 +11,8 @@ function mapStateToProps(state){
 
 //将action的所有方法绑定到props上
 function mapDispatchToProps(dispatch) {
-//	console.log(dispatch);
-//	return bindActionCreators(buylistAction, dispatch)
+	console.log(dispatch);
+	return bindActionCreators(buylistAction, dispatch)
 }
 
 module.exports = redux.connect(mapStateToProps, mapDispatchToProps)(BuylistComponent);

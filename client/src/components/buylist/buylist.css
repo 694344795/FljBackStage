@@ -1,6 +1,6 @@
 .dk-content>span{
 	display: inline-block;
-	margin:0 50px 20px 0;
+	margin:0 50px 20px -30px;
 }
 .dk-content>span>input{
 	width: 100px;
@@ -15,15 +15,33 @@
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-.dk-content table{
+.dk-content table tr th{
+	background: #eee;
+	height: 40px;
 }
 .dk-content table tr td{
 	width: 130px;
 	height: 40px;
 }
-
-
-
+.dk-content table tr .delbtn{
+	width: 60px;
+	height: 20px;
+	outline: none;
+	border-radius: 5px;
+}
+.dk-content .xginpt{
+	display: inline-block;
+	/*width: 60px;*/
+	height: 20px;
+	outline: none;
+	border: 0;
+	border-radius: 5px;
+	margin: 10px;
+	text-align: center;
+}
+.dk-content .xginpt:hover{
+	background: #ccc;
+}
 
 
 
