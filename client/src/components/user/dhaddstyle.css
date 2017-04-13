@@ -1,0 +1,32 @@
+#add{
+  width:300px;
+  height:120px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:#eee;
+  border-radius: 10px;
+}
+
+#add .content{
+  padding:14px;
+}
+#add .content .usename, #add .content .usegroup{
+  margin-bottom:10px;
+}
+#add .content .usename input{
+  width:120px;
+  border:0;
+  padding:1px 0;
+}
+#add .content .btn{
+ text-align:center;
+}
+#add .content .btn input{
+  margin:5px 30px;
+  width: 60px;
+}
+select{
+  width:120px;
+}

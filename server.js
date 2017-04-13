@@ -20,16 +20,15 @@ var path = require('path');
 var express = require('express');
 var app = express();
 
-
-// var twRouter = require('./server/nodeServer/twrouter')
-// app.use(express.static(path.join(__dirname, '/')));
-
-
+//tw
 var twRouter = require('./server/nodeServer/twrouter')
-
 twRouter.router(app);
-app.use(express.static(path.join(__dirname,'/')));
-console.log(__dirname);
+
+//dh
+var dhRouter = require('./server/nodeServer/dhrouter')
+dhRouter.router(app);
+
+//app.use(express.static(path.join(__dirname,'/')));
 var zbRouter = require('./server/nodeServer/zbrouter')
 zbRouter.router(app);
 

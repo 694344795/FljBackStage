@@ -1,0 +1,12 @@
+th{text-align: center;}
+td input{background: #f5f5f5;
+  text-align: center;
+  height: 30px;
+    outline: none;
+    border: none;}
+.edit{width: 60px;}
+.del{width: 60px}
+.add{width: 60px}
+
+
+

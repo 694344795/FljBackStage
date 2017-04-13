@@ -64,6 +64,7 @@ module.exports = {
 		  host: obj.host ? obj.host : host,
 		  user: obj.user ? obj.user : user,
 		  password: obj.password ? obj.password : psw,
+      multipleStatements:true,
 		  database: data.DatabaseName
 		});
 		sqlconnect.connect();
@@ -71,7 +72,6 @@ module.exports = {
       var select = 'select * from '+ data.TableName +''
     }else if(data.Condition){var select = data.Condition}
     sqlconnect.query(select, function(err, rows, fields) {
-      console.log(15678)
 	    if(err) throw err;
       _callback(err,rows)
     });
@@ -97,6 +97,7 @@ module.exports = {
       host: obj.host ? obj.host : host,
       user: obj.user ? obj.user : user,
 		  password: obj.password ? obj.password : psw,
+      multipleStatements:true,
       database: obj.DatabaseName
     });
     sqlconnect.connect();
@@ -120,6 +121,7 @@ module.exports = {
 		  host: obj.host ? obj.host : host,
       user: obj.user ? obj.user : user,
 		  password: obj.password ? obj.password : psw,
+      multipleStatements:true,
 		  database: data.DatabaseName
 		});
 		sqlconnect.connect();
@@ -141,6 +143,7 @@ module.exports = {
       host: obj.host ? obj.host : host,
       user: obj.user ? obj.user : user,
       password: obj.password ? obj.password : psw,
+      multipleStatements:true,
       database: data.DatabaseName
     });
     sqlconnect.connect();
