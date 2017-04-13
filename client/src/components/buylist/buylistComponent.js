@@ -81,9 +81,9 @@ var buylistComponent = React.createClass({
 				</ul>
 			</div>
 				<div className="dk-content">
-//					<span>增加订单<input type="text" placeholder="输入信息" /></span>
-//					<span>删除订单<input type="text" placeholder="输入信息" /></span>
-//					<span>修改订单<input type="text" placeholder="输入信息" /></span>
+					<span>增加订单<input type="text" placeholder="输入信息" /></span>
+					<span>删除订单<input type="text" placeholder="输入信息" /></span>
+					<span>修改订单<input type="text" placeholder="输入信息" /></span>
 					<table>
 				      <thead>
 				        <tr>
@@ -100,7 +100,6 @@ var buylistComponent = React.createClass({
    				 	</table>
 				</div>
 				</div>
-				<div className="dk-footer">@凡乐街</div>
 			</div>
         )
     },

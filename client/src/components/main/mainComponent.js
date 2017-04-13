@@ -67,7 +67,6 @@ var MainComponent = React.createClass({
 					<li><Link to="/login"><a href="login.html">登录页面</a></Link></li>
 				</ul>
 			</div>
-		<div className="dk-content"></div>
 		</div>
 		)
 	}

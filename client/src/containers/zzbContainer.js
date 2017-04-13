@@ -1,7 +1,7 @@
 var React = require('react');
 var redux = require('react-redux');
 var {bindActionCreators} = require('redux');
-var zzbComponent = require('../components/main/mainComponent');
+var ZzbComponent = require('../components/main/mainComponent');
 var zzbAction = require('../actions/zzbAction');
 
 //将reducer绑定到props上
@@ -15,4 +15,4 @@ function mapDispatchToProps(dispatch) {
   	return bindActionCreators(zzbAction, dispatch)
 }
 
-module.exports = redux.connect(mapStateToProps, mapDispatchToProps)(zzbComponent);
+module.exports = redux.connect(mapStateToProps, mapDispatchToProps)(ZzbComponent);

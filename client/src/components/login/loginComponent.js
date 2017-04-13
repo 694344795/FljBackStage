@@ -24,17 +24,17 @@ var LoginComponent = React.createClass({
 						<form role="form">
 							<fieldset>
 								<div className="form-group">
-									<input className="form-control" placeholder="邮箱" name="email" type="email" autofocus=""/>
+									<input className="form-control" placeholder="邮箱" type="email"/>
 								</div>
 								<div className="form-group">
-									<input className="form-control" placeholder="密码" name="password" type="password" value=""/>
+									<input className="form-control" placeholder="密码" type="password"/>
 								</div>
 								<div className="checkbox">
 									<label>
 										<input name="remember" type="checkbox" value="Remember Me" />Remember Me
 									</label>
 								</div>
-								<a href="index.html" className="btn btn-primary" >登录</a>
+								<a href="#/login" className="btn btn-primary" onClick={this.props.login}>登录</a>
 							</fieldset>
 						</form>
 					</div>

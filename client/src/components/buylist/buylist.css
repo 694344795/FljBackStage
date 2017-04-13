@@ -5,7 +5,7 @@
 .dk-content>span>input{
 	width: 100px;
     height: 34px;
-    margin:16px 0 0 10px;
+    margin:16px auto;
     padding-left: 20px;
     font-size: 14px;
     line-height: 1.42857143;
@@ -15,15 +15,20 @@
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+.dk-content table{
+	margin: 0 auto;
+}
 .dk-content table tr th{
+	text-align: center;
 	background: #eee;
 	height: 40px;
 }
 .dk-content table tr td{
-	width: 130px;
+	width: 70px;
 	height: 40px;
 }
-.dk-content table tr .delbtn{
+.dk-content table tr .delbtn,
+.dk-content table tr th .delbtn{
 	width: 60px;
 	height: 20px;
 	outline: none;

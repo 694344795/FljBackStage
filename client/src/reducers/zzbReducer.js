@@ -45,6 +45,11 @@ module.exports = function(state,action){
 				time: 7
 			};
 			break;
+		default:
+		initState = {
+				color: 'red',
+				time: 7
+		};
 	}
 	return initState;
 }

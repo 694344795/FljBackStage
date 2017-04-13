@@ -6,6 +6,7 @@ var loginAction = require('../actions/loginAction');
 
 //将reducer绑定到props上
 function mapStateToProps(state){
+	console.log(state);
 	return state;
 }
 

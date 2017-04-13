@@ -1,21 +1,26 @@
-var {CHANGE_GREEN, CHANGE_YELLOW, CHANGE_RED} = require('../constants/loginConstant');
+var {CHANGE_GREEN, CHANGE_YELLOW, CHANGE_RED, CHANGE_LOGIN} = require('../constants/loginConstant');
 
 module.exports = function(state,action){
 	var initState;	
-	switch(action.type){
-		case CHANGE_GREEN:
-			initState = {
-				color: 'green',
-				time: 5
-			};
-			break;
-		case CHANGE_YELLOW:
-			initState = {
-				color: 'yellow',
-				time:3
+	var _id;
+	function ajax2(id){
+		$.ajax({
+			type:"post",
+			url:"http://localhost:888/login",
+			async:false,
+			data:{"id":id},
+			dataType:"json",
+			success:function(res){
+				initState ={datas:res};
 			}
-			break;
-		case CHANGE_RED:
+		});
+		console.log(id);
+		return initState;
+	};
+	switch(action.type){
+			case CHANGE_LOGIN:
+			var obj = event.target;
+			console.log(obj);
 			initState = {
 				color: 'red',
 				time: 7
