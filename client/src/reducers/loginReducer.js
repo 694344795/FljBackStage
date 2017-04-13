@@ -1,5 +1,5 @@
 var {CHANGE_GREEN, CHANGE_YELLOW, CHANGE_RED, CHANGE_LOGIN} = require('../constants/loginConstant');
-
+var $ = require('jquery');
 module.exports = function(state,action){
 	var initState;	
 	var _id;
@@ -20,8 +20,9 @@ module.exports = function(state,action){
 	switch(action.type){
 			case CHANGE_LOGIN:
 			var obj = event.target;
-			console.log(obj);
+			console.log($(obj).find('field'));
 			initState = {
+				tar:obj,
 				color: 'red',
 				time: 7
 			};
