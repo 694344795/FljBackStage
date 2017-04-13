@@ -4,7 +4,7 @@ module.exports = function(state,action){
 	var initState;
 	function ajax1(){
 		$.ajax({
-			type:"GET",
+			type:"post",
 			url:"http://localhost:888/buylist",
 			async:false,
 			dataType:"json",
@@ -16,7 +16,7 @@ module.exports = function(state,action){
 	};
 	function ajax2(id){
 		$.ajax({
-			type:"GET",
+			type:"post",
 			url:"http://localhost:888/buylist",
 			async:false,
 			data:{"id":id},
@@ -31,7 +31,7 @@ module.exports = function(state,action){
 	function xgajax(id,room_id,user_id,buy_num,h_time){
 		$.ajax({
 			type:"post",
-			url:"http://localhost:888/buylist",
+			url:"http://localhost:888/buylist2",
 			data:{"buyid":id,"roomid":room_id,"userid":user_id,"buynum":buy_num,"time":h_time},
 			dataType:"json",
 			success:function(res){

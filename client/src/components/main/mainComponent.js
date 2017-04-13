@@ -17,7 +17,7 @@ var MainComponent = React.createClass({
 					<a className="navbar-brand" href="#"><span>凡乐街</span>后台管理系统</a>
 					<ul className="user-menu">
 						<li className="dropdown pull-right">
-							<a href="#" className="dropdown-toggle" data-toggle="dropdown"> 用户 <span className="caret"></span></a>
+							<a href="javascipt:;" className="dropdown-toggle" data-toggle="dropdown"> 用户 <span className="caret"></span></a>
 							<ul className="dropdown-menu" role="menu">
 								<li><a href="#"> 个人中心</a></li>
 								<li><a href="#"> 设置</a></li>
@@ -35,7 +35,7 @@ var MainComponent = React.createClass({
 					</div>
 				</form>
 				<ul className="nav menu">
-					<li className="active"><Link to="/"><a href="#">信息汇总</a></Link></li>
+					<li><Link to="/"><a href="#">信息汇总</a></Link></li>
 					<li><Link to="/"><a href="#">销售总额</a></Link></li>
 					<li><Link to="/"><a href="#">商品信息</a></Link></li>
 					<li><Link to="/"><a href="#">各类排行</a></Link></li>
