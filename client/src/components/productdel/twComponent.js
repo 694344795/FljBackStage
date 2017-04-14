@@ -8,18 +8,34 @@ var TwComponent = React.createClass({
         var columns = [];
         var tb = [],page=[];
         var row= 6 ;
-        // console.log(this.props)
+        var sum=44;
+        console.log(this.props.twReducer.datas[0][0])
+        if(this.props.twReducer.datas[1]){
+            console.log(this.props.twReducer.datas)
+            for(var i=0;i<=sum/this.props.twReducer.datas[0].length;i++){
+
+                page.push(i)
+            }
+        }else{
+
+            page=[1]
+
+        }
+        if(this.props.twReducer.datas[0][0]) {
+            this.props.twReducer.datas=this.props.twReducer.datas[0]
+        }
         for(var key in this.props.twReducer.datas[0]){
             columns.push(key);
         }
+
         for(var key in this.props.twReducer.datas){
             tb.push(this.props.twReducer.datas[key]);
         }
-         for(var i=0;i<=this.props.twReducer.datas.length/row;i++){
-            page.push(i)
-         }
-         // console.log(page)
-        console.log(tb)
+   console.log(this.props.twReducer.datas[0])
+
+
+         console.log(page)
+        // console.log(tb)
         return (
             <table className="tw">
             <thead>
@@ -27,6 +43,7 @@ var TwComponent = React.createClass({
                 <th>
                  <input type= "button" className='add' value ='添加新的数据' onClick={this.props.show} />
                 </th>
+                <td>选择搜索类型：</td>
              <th>
                <select defaultValue='' className = "sel">
                     {
@@ -42,11 +59,15 @@ var TwComponent = React.createClass({
               </td>
               <td><input className="search" type="button" value="搜索" onClick={self.props.search}/>
               </td>
+              <td>选择表格行数：</td>
               <td>
-                 <input type= "text" className='search'
+                <input type= "text" className='search'
                     id='row'
-                 placeholder ='选择表格行数' defaultValue='8'  onChange={self.props.row =8} />
+                 placeholder ='选择表格行数' defaultValue='8'   />
+
                 </td>
+                <td>点击选行：</td>
+                <td className='btn' name='index' key='index'><input value = '1' type="button" onClick={self.props.page}/></td>
            </tr>
             <tr>
             {

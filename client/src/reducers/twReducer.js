@@ -1,4 +1,4 @@
-var {CHANGE,DELETE,ADD,SHOW,SEARCH} = require('../constants/twConstant');
+var {CHANGE,DELETE,ADD,SHOW,SEARCH,PAGE} = require('../constants/twConstant');
 var $ = require('jquery');
 
 var  updatedata;
@@ -17,6 +17,7 @@ function tw(state,action){
                 Val.push( $(event.target.closest('tr').children).find('input')[i].value)
              }
              console.log(Val);
+
              
              updatedata={
                 "type":"change",
@@ -97,6 +98,31 @@ function tw(state,action){
              
              updatedata={
                 "type":"search",
+                "dataVal":Val
+            }
+            console.log(updatedata)
+            
+            var a =ajax(updatedata); 
+            
+             // location.reload() 
+             // console.log(a)
+            data = Data;
+           
+        break;
+        case PAGE:
+
+            console.log(111)
+            var Val = []
+           
+           
+            Val.push($(event.target).val());
+            Val.push($('#row').val());
+            Val.push($('.search').get(0).value);
+            console.log($('.search').get(0).value);
+              
+             
+             updatedata={
+                "type":"page",
                 "dataVal":Val
             }
             console.log(updatedata)
