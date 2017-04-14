@@ -28,7 +28,7 @@ twRouter.router(app);
 var dhRouter = require('./server/nodeServer/dhrouter')
 dhRouter.router(app);
 
-//app.use(express.static(path.join(__dirname,'/')));
+app.use(express.static(path.join(__dirname,'/')));
 var zbRouter = require('./server/nodeServer/zbrouter')
 zbRouter.router(app);
 

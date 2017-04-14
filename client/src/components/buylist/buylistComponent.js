@@ -5,9 +5,9 @@ var style = require('./buylist.css');
 var {Router, Route, hashHistory, Link, IndexRoute, browserHistory} = ReactRouter;
 var buylistComponent = React.createClass({
     render: function(){
-    	console.log(this.props);
+    	// console.log(this.props);
     	var self = this;
-    	var item = this.props.data.datas.map(function(val,index){
+    	var item = this.props.buylistReducer.data.datas.map(function(val,index){
     		return(
     			<tr className="newtr" key={index}>
     				<td><input type="checkbox"/></td>
@@ -19,7 +19,7 @@ var buylistComponent = React.createClass({
 	    			<td><input type="button" value="修改" className="delbtn" onClick={self.props.xgbtn}/>
 	    				<input type="button" value="删除" className="delbtn" onClick={self.props.delBuy}/></td>
     			</tr>
-    		) 
+    		)
     	});
         return (
 			<div className="dk-container">
@@ -56,7 +56,7 @@ var buylistComponent = React.createClass({
 					<li><Link to="/buylist"><a href="#">订单列表</a></Link></li>
 					<li className="parent ">
 						<a href="#">
-							 新建项  
+							 新建项
 						</a>
 						<ul className="children collapse" id="sub-item-1">
 							<li>

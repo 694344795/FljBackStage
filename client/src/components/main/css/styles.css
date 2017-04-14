@@ -861,3 +861,6 @@ h1.page-header {
 .fixed-table-pagination .pagination-detail {
 	margin-top: 20px;
 }
+
+.right_content{position: absolute;right: 0;left: 241px;}
+

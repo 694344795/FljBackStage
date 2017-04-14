@@ -1,12 +1,12 @@
-th{text-align: center;}
-td input{background: #f5f5f5;
+.bs-example th{text-align: center;}
+.bs-example td input{background: #f5f5f5;
   text-align: center;
   height: 30px;
     outline: none;
     border: none;}
-.edit{width: 60px;}
-.del{width: 60px}
-.add{width: 60px}
+.bs-example .edit{width: 60px;}
+.bs-example .del{width: 60px}
+.bs-example .add{width: 60px}
 
 
 

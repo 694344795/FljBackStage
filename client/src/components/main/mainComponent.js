@@ -9,6 +9,7 @@ var MainComponent = React.createClass({
 		//判断是当前用户是否有权限，如果没有，则跳车到 login
 	},
 	render: function(){
+		console.log(this.props);
 		return (
 			<div>
 			<nav className="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -37,13 +38,13 @@ var MainComponent = React.createClass({
 				<ul className="nav menu">
 					<li><Link to="/"><a href="#">信息汇总</a></Link></li>
 					<li><Link to="/"><a href="#">销售总额</a></Link></li>
-					<li><Link to="/"><a href="#">商品信息</a></Link></li>
+					<li><Link to="/tw"><a href="#">商品信息</a></Link></li>
 					<li><Link to="/"><a href="#">各类排行</a></Link></li>
-					<li><Link to="/"><a href="#">客户列表</a></Link></li>
+					<li><Link to="/dh"><a href="#">客户列表</a></Link></li>
 					<li><Link to="/buylist"><a href="#">订单列表</a></Link></li>
 					<li className="parent ">
 						<a href="#">
-							 新建项  
+							 新建项
 						</a>
 						<ul className="children collapse" id="sub-item-1">
 							<li>
@@ -66,6 +67,9 @@ var MainComponent = React.createClass({
 					<li role="presentation" className="divider"></li>
 					<li><Link to="/login"><a href="login.html">登录页面</a></Link></li>
 				</ul>
+			</div>
+			<div className="right_content">
+				  <div>{this.props.children}</div>
 			</div>
 		</div>
 		)

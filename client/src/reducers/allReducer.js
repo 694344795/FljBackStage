@@ -11,7 +11,7 @@ import dhReducer from './dhReducer.js';
 
 //使用redux的combineReducers方法将所有reducer打包起来
 const RootReducer = combineReducers({
-	zzbReducer,buylistReducer,loginReducer,twReducer
+	zzbReducer,buylistReducer,loginReducer,dhReducer,twReducer
 })
 
 export default RootReducer;

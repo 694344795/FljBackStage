@@ -4,7 +4,7 @@ var UserComponent=React.createClass({
   render:function(){
     var user=[]
       // console.log(this.props)
-    for(var k in this.props.datas[0]){
+    for(var k in this.props.dhReducer.datas[0]){
       user.push(k)
     }
     return(
@@ -26,7 +26,7 @@ var UserComponent=React.createClass({
           </thead>
           <tbody>
           {
-            this.props.datas.map(function(elem,index) {
+            this.props.dhReducer.datas.map(function(elem,index) {
               return(<tr key={index} className="active">
                 <th></th>
                 <th></th>
